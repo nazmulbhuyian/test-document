@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Description</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        #overview,
+        #nodejs,
+        #vscode,
+        #backend,
+        #frontend,
+        #sitesetting,
+        #sitepolicy,
+        #paymentGateway,
+        #currency,
+        #videoOverview,
+        #support {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 10px;
+            height: 100%;
+        }
+
+        * {
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        ul.sidebar {
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+            overflow-x: hidden;
+            width: 250px;
+            position: fixed;
+            background: #fff;
+            transition: all 0.3s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+                rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+
+        ul.sidebar li {
+            margin-bottom: 15px;
+        }
+
+        .main-content {
+            width: calc(100% - 250px);
+            margin-left: 250px;
+            padding: 10px 20px;
+        }
+
+        ul.sidebar li a {
+            text-transform: capitalize;
+            transition: all 0.3s ease-in-out;
+            padding: 5px;
+            line-height: 1;
+            font-size: 18px;
+            color: #0e3d7a;
+
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        ul.sidebar li ul li ul li a {
+            font-size: 14px;
+        }
+
+        ul.sidebar li ul li a {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        ul.sidebar li ul li {
+            margin-bottom: 0;
+        }
+
+        .accordion-item {
+            padding-left: 13px;
+        }
+
+        .subMenu {
+            padding-left: 20px;
+        }
+
+        .subMenu.show {
+            display: block;
+            transition: all 0.3s ease-in-out;
+        }
+
+        ul.subMenu.aboutSubMenu.show li {
+            border-bottom: 0;
+            padding: 0;
+        }
+
+        ul.subMenu.aboutSubMenu.show {
+            padding-left: 10px;
+            background: #fff;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            box-shadow: rgba(221, 175, 74, 0.2) 0px 7px 29px 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        #support {
+            height: 100vh;
+        }
+
+        .sidebar li.active {
+            font-size: x-large;
+
+            background-color: #c9b17d;
+
+            border-left: 2px solid #db2ff1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="sidebar">
+            <li><a href="javascript:void(0)">Installation Instruction</a>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#nodejs">Node JS</a></li>
+                    <li><a href="#vscode">VS Code</a></li>
+                    <li><a href="#backend">Backend</a></li>
+                    <li><a href="#frontend">Frontend</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)">Setting</a>
+                <ul>
+                    <li><a href="#sitesetting">Site Setting</a></li>
+                    <li><a href="#sitepolicy">Site Policy</a></li>
+                    <li><a href="#paymentGateway">Payment GateWay</a></li>
+                    <li><a href="#currency">Currency</a></li>
+                </ul>
+            </li>
+            <li><a href="#videoOverview">Video Overview</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+
+
+        <div class="main-content">
+
+            
+
+            <div id="overview">
+                <h2 style="color:   #c09318;">Project Overview:</h2>
+                <p> <strong>Classic Computer</strong> is a modern e-commerce platform built with React.js, Redux, Tailwind CSS, Node.js, Express.js, and MongoDB. It offers a wide selection of computer components, accessories, laptops, and mobile devices. The site features a powerful search system, real-time inventory updates, and user reviews and Q&A sections. Customers can browse products, make secure purchases, and track orders through a clean and responsive interface. With dynamic content management, site admins can easily update listings and offers, making it a robust platform for tech enthusiasts and casual buyers alike.</p>
+                <br> 
+                <br>
+                <p> Follow the steps below for successful installation of this project on your computer. Hope you can
+                    execute this project very easily.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <div id="nodejs">
+                <h3 style="color: #c09318;">How to Install Node.js and NPM on Windows</h3>
+
+                <p>
+                    Here, we are going to explain the installation process step-by-step.
+                </p>
+                <br />
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 1: Download the
+                    Installer</strong>
+                <p>
+                    Download the <b>Windows Installer</b> from
+                    <a href="https://nodejs.org/en/download/prebuilt-installer/current" target="_blank">NodeJs official
+                        website</a>. Make sure you have downloaded the latest version of NodeJs. It
+                    includes the NPM package manager.
+                </p>
+                <p>
+                    Here, we are choosing the 64-bit version of the Node.js installer.
+                </p>
+
+                <img src="../images/node/Check-Node.js-and-NPM-Version.png" alt="">
+
+                <p>
+                    The LTS (Long-term Support) version is highly recommended for you.
+                    After the download of the installer package, install it with a
+                    double-click on it.
+                </p>
+                <p>
+                    Now .msi file will be downloaded to your browser. Choose the desired
+                    location for that.
+                </p>
+
+                <strong style="font-size: 25px; display: block">Step 2: Install Node.js and NPM</strong>
+                <br />
+                <img src="../images/node/Install_NPM_and_Node_js_dfb6f2ff29.png" alt="" />
+
+                <p>
+                    After choosing the path, double-click to install .msi binary files
+                    to initiate the installation process. Then give access to run the
+                    application.
+                </p>
+
+                <p>
+                    You will get a welcome message on your screen and click the “Next”
+                    button. The installation process will start.
+                </p>
+
+                <ul>
+                    <li style="font-size: 20px">
+                        Choose the desired path where you want to install Node.js. <br />
+                        <img src="../images/node/Choose-Path-to-Install-Node.js.png"
+                            alt="Choose-Path-to-Install-Node.js" />
+                    </li>
+                    <li style="font-size: 20px">
+                        By clicking on the Next button, you will get a custom page setup
+                        on the screen. Make sure you choose <b>npm package manager</b> ,
+                        not the default of <b>Node.js runtime</b>
+                        . This way, we can install Node and NPM simultaneously.
+                    </li>
+                </ul>
+
+                <p>
+                    You should have 143MB of space to install Node.js and npm features.
+                </p>
+                <p><b>The following features will be installed by default:</b></p>
+
+                <ul>
+                    <li style="font-size: 20px">Node.js runtime</li>
+                    <li style="font-size: 20px">Npm package manager</li>
+                    <li style="font-size: 20px">Online documentation shortcuts</li>
+                    <li style="font-size: 20px">
+                        Add to Path <br /><br>
+                        <img src="../images/node/Select_Node_js_Features_to_install_0847ad9e3a.png"
+                            alt="Select_Node_js_Features_to_install_0847ad9e3a" />
+                    </li>
+                    <br />
+                    <li style="font-size: 20px">
+                        Bang! The setup is ready to install Node and NPM. Let’s click on
+                        the Install button so hard!
+                        <br />
+                        <br />
+                        <img src="../images/node/Final-Step-of-Node.js-Installation.png"
+                            alt="Final-Step-of-Node.js-Installation" />
+                    </li>
+                </ul>
+
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 3: Check Node.js and NPM
+                    Version</strong>
+                <br />
+
+                <ul>
+                    <li style="font-size: 20px">
+                        If you have a doubt whether you have installed everything
+                        correctly or not, let’s verify it with “Command Prompt”. <br>
+                        <img src="../images/node/Check-Node.js-and-NPM-Version.png" alt="Check-Node.js-and-NPM-Version" />
+                    </li>
+                </ul>
+
+                <p>Command Prompt window will appear on the screen.</p>
+                <p>
+                    To confirm Node installation, type
+                    <code><i>node -v</i></code> command and press Enter
+                </p>
+                <p>
+                    To confirm NPM installation, type
+                    <code><i>npm -v</i></code> command and press Enter
+                </p>
+                <p>
+                    And you don’t need to worry if you see different numbers than mine
+                    as Node and NPM are updated frequently.
+                </p>
+
+                <img src="../images/node/Frequent-Update-of-Node-and-NPM.png" alt="Frequent-Update-of-Node-and-NPM" />
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="vscode">
+                <h3 style="color: #c09318;">How to Install Visual Studio Code on Windows</h3>
+                <br>
+                <br>
+                <br>
+
+                <img src="../images/vscode/1_24duD0JciRy3W_483LP50g.webp" alt="" />
+
+                <p>
+                    Hey! Welcome back. Today I’ll highlight the simple steps to download
+                    and install Visual Studio Code on Windows 10.
+                </p>
+
+                <ul>
+                    <li style="font-size: 20px">
+                        Visit the official website to download the latest Visual Studio
+                        code version.
+                        <a href="https://code.visualstudio.com/download" target="_blank">click here to visit the
+                            official website</a>
+                    </li>
+                    <br />
+                    <li style="font-size: 20px">
+                        Click on the “Download for Windows” button and download the latest
+                        version.
+                        <br />
+                        <img src="../images/vscode/1__Ycs6Z43-hojJcXdZIAKNw.webp" alt="" />
+                    </li>
+                </ul>
+                <p>
+                    You will be navigated to the following page when the download
+                    process starts.
+                </p>
+
+                <img src="../images/vscode/1_46CHS5e7vkDOT8MEFD-aFw.webp" alt="" />
+
+                <ul>
+                    <li style="font-size: 20px">
+                        Once the download is complete, go to the installer file
+                        (VSCodeUserSetup-x64–1.85.1) and double-click on it to run the
+                        installer.
+                    </li>
+                    <li style="font-size: 20px">
+                        Follow these instructions to complete the installation process.
+                    </li>
+                </ul>
+
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 1: Accept the user agreement
+                    and click “Next”</strong> <br>
+                <img src="../images/vscode/1_A6iIjTMXpomSnQekefqffQ.webp" alt="" />
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 2: Change the location by
+                    using the “Browse…” button.
+                    (Otherwise, you can keep the default location) Click “Next”</strong> <br>
+                <img src="../images/vscode/1_ruAHoaqheLMPb0xk27CK4A.webp" alt="" />
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 3: “Select Start Menu Folder”
+                    window keep the default and
+                    click “Next”</strong> <br>
+                <img src="../images/vscode/1_qeGTeg6pZ08Io2rx1gnAZQ.webp" alt="" /> <br>
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 4: In the “Select Additional
+                    Tasks” window check-in your
+                    preferred options and click “Next”</strong> <br>
+                <img src="../images/vscode/1_gFJv2YxDSdhafLdi4Ln_4A.webp" alt="" /> <br>
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 5: Click the “Install” button
+                    to start the installation
+                    process</strong> <br>
+                <img src="../images/vscode/1_uggdqpM31R-iJU7-941Sdw.webp" alt="" /> <br>
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Step 6: Checked “Launch Visual
+                    Studio Code” option and click the
+                    “Finish” button to complete the installation process</strong> <br>
+                <img src="../images/vscode/1_7vPQcP85GzGBA41ZOskDAQ.webp" alt="" />
+                <p>
+                    Finally, Visual Studio Code will automatically launch after the
+                    installation is complete.
+                </p>
+                <p>
+                    That’s it! Now you’ve successfully installed Visual Studio Code on
+                    your Windows 10 machine. You can now start using it to perform your
+                    tasks.
+                </p>
+                <strong style="font-size: 25px; margin-bottom: 10px; display: block">Happy learning!</strong>
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Backend-->
+
+            <div id="backend">
+                <h3 style="color: #c09318;">How to Setup Node Js Backend File</h3>
+                <br>
+                <br>
+                <br>
+                <h5>Prerequisites</h5>
+
+                <ul>
+                    <li style="list-style: circle; margin-bottom: 50px;font-size: 20px;">
+                        To run the project we need Visual Studio Code and Node Package Manager installed which we have
+                        already installed.
+
+                    </li>
+                </ul>
+
+                <h5>Step-by-Step Guide</h5>
+
+                <div style="margin-top: 30px">
+                    <h5>1. Extract the <strong>main_file </strong> folder:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            If the main_file folder are in a compressed format, extract
+                            them. Otherwise, navigate to the <code>"main_file"</code> folder
+                            directly.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/main_files_extract.png" alt="" />
+                </div>
+                <div style="margin-top: 30px">
+                    <h5>
+                        2. Open the <strong>main_file</strong> folder and extract
+                        <strong>code</strong> folder
+                    </h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            If the code folder are in a compressed format, extract them.
+                            Otherwise, navigate to the <code>"code"</code> folder directly.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/code_extract.png" alt="" />
+                    <img src="../images/frontend/click_code_extract.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>
+                        3. Open the <strong>code</strong> folder and extract
+                        <strong>node_backend</strong> folder
+                    </h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            If the node_backend files are in a compressed format, extract
+                            them. Otherwise, navigate to the
+                            <code>"node_backend"</code> folder directly.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/node_backend_extract.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>4. Open the <strong>node_backend </strong> folder</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            Change directory to the <strong>"node_backend"</strong> folder.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/open_node.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>5. Open Command Prompt:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            Type <code>"cmd"</code> in the location bar of the file explorer
+                            to open a Command Prompt window in the current directory.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend-10.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>6. Open the project in Visual Studio Code:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            In the Command Prompt, type <code>"code ."</code> command to
+                            open the project in Visual Studio Code.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend-11.png" alt="" />
+                </div>
+
+
+                <div style="margin-top: 30px">
+                    <h5>7. Create a New Terminal from Menu</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            In the Visual Studio Menu bar you find <code>"Terminal"</code> . Select
+                            <code>"Terminal"</code> and Tap on <code>"New Terminal"</code> .
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend_18.png"  alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>8. Open Git Bash if you don’t have Git Bash then install it following the instructions</h5>
+                    <ul>
+                        <li style="font-size: 20px;">
+                             <a href="https://git-scm.com/downloads" target="_blank">Click here to visit the official git bash website</a>
+                        </li>
+                        <img src="../images/gitBash/one.png" style="margin:  30px" alt="" />
+                        <li style="font-size: 20px;">
+                            Download Git Bash Standalone Installer and install it
+                        </li>
+                        <img src="../images/gitBash/two.png" style="margin-top: 30px;" alt="" />
+                    </ul>
+                </div>
+             
+
+                <div style="margin-top: 30px">
+                    <h5>9. Write code with Git Bash</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            We will use <code>"Git Bash"</code> to install and run the project. <br> First you will
+                            select arrow icon same as ScreenShort and select <code>"Git Bash"</code>.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend_19.png" alt="" />
+                </div>
+
+
+                <div style="margin-top: 30px">
+                    <h5>10. Install project dependencies:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            In the terminal type,
+                            <code>"npm install"</code> command to install the necessary
+                            packages.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend-13.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>11. Run the project:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            To start the project, type <code>"npm run dev"</code> command in
+                            the terminal.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend-15.png" alt="" />
+                </div>
+
+        
+                
+                <div style="margin-top: 30px">
+                    <h5>12. Access the project in your browser:</h5>
+                    <ul>
+                        <li style="font-size: 20px;">
+                            Open your web browser and navigate to
+                            <code>"http://localhost:5000/"</code> to see the project
+                            running.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/classic_computer_server.png" alt="" />
+      
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Frontend-->
+            <div id="frontend">
+                <h3 style="color: #c09318;">Setting Up and Running the React Frontend</h3><br>
+                <br>
+                <h5>Prerequisites</h5>
+
+                <ul>
+                    <li style="list-style: circle; margin-bottom: 50px;font-size: 20px;">
+                        Ensure you have Node.js and npm (Node Package Manager) and VSCode
+                        ( Visual Studio Code ) installed on your machine.
+                    </li>
+                </ul>
+
+                <h5>Step-by-Step Guide</h5>
+
+                <div style="margin-top: 30px">
+                    <h5>1. Extract the <strong>main_file </strong> folder:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            If the main_file folder are in a compressed format, extract
+                            them. Otherwise, navigate to the <code>"main_file"</code> folder
+                            directly.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/main_files_extract.png" alt="" />
+                </div>
+                <div style="margin-top: 30px">
+                    <h5>
+                        2. Open the <strong>main_file</strong> folder and extract
+                        <strong>code</strong> folder
+                    </h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            If the code folder are in a compressed format, extract them.
+                            Otherwise, navigate to the <code>"code"</code> folder directly.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/code_extract.png" alt="" />
+                    <img src="../images/frontend/click_code_extract.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>3. Extract the <strong>react_frontend</strong> folder:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            If the react_frontend files are in a compressed format, extract
+                            them. Otherwise, navigate to the
+                            <code>"react_frontend"</code> folder directly.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/react_frontend_extract.png" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>4. Open the <strong>react_frontend</strong> folder:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">Change directory to the `react_frontend` folder.</li>
+                    </ul>
+                    <img src="../images/frontend/reactOpen.png" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>5. Open Command Prompt:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            Type <code>"cmd"</code> in the location bar of the file explorer
+                            to open a Command Prompt window in the current directory.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/frontend-5.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>6. Open the project in Visual Studio Code:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            In the Command Prompt, type <code>"code ."</code> command to
+                            open the project in Visual Studio Code.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/frontend-6.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>7. Create a New Terminal from Menu</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            In the Visual Studio Menu bar you find <code>"Terminal"</code> . Select
+                            <code>"Terminal"</code> and Tap on <code>"New Terminal"</code> .
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend_18.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>8. Open Git Bash if you don’t have Git Bash then install it following the instructions</h5>
+                    <ul>
+                        <li style="font-size: 20px;">
+                             <a href="https://git-scm.com/downloads" target="_blank">Click here to visit the official git bash website</a>
+                        </li>
+                        <img src="../images/gitBash/one.png" style="margin:  30px" alt="" />
+                        <li style="font-size: 20px;">
+                            Download Git Bash Standalone Installer and install it
+                        </li>
+                        <img src="../images/gitBash/two.png" style="margin-top: 30px;" alt="" />
+                    </ul>
+                </div>
+             
+
+                <div style="margin-top: 30px">
+                    <h5>9. Write code with Git Bash</h5>
+
+                    <ul>
+                        <li style="font-size: 20px;">
+                            We will use <code>"Git Bash"</code> to install and run the project. <br> First you will
+                            select arrow icon same as ScreenShort and select <code>"Git Bash"</code>.
+                        </li>
+                    </ul>
+                    <img src="../images/backend/backend_19.png" alt="" />
+                </div>
+
+
+
+                <div style="margin-top: 30px">
+                    <h5>10. Install project dependencies:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            In the terminal (inside Visual Studio Code or Command Prompt),
+                            <code>"npm install"</code> command to install the necessary
+                            packages.
+                        </li>
+                    </ul>
+                    <img src="../images/frontend/frontend-8.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>11. Handle installation errors (if any):</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            If you encounter any errors during the installation, type
+
+                            <code>"npm install --force"</code> force the installation of the
+                            necessary packages.
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>
+                        12. Now set Base Url file. If Your backend run locally set url with
+                        http://localhost:5000/ if port is 5000 Or backed is live set the
+                        live url.
+                    </h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            Here is an example: if you want run locally:
+                            <code>BASE_URL: "http://localhost:5000/api/v1"</code> <br />
+                            if you want to run live server:
+                            <code>BASE_URL: "https://example.com/api/v1"</code>
+                        </li>
+                    </ul>
+
+                </div>
+                <div style="margin-top: 30px;">
+                    <h5>10. To locate baseURL file in vscode sidebar you can find
+                        <strong>src</strong> folder
+                    </h5>
+                    <br>
+                    <img src="../images/frontend/frontend-10.png" alt="" />
+                </div>
+
+
+
+
+                <div style="margin-top: 30px;">
+                    <h5>
+                        11. Inside <strong>src</strong> folder open
+                        <strong>utils</strong> folder
+                    </h5>
+                    <br>
+                    <img src="../images/frontend/frontend-11.png" alt="" />
+                </div>
+                <div style="margin-top: 30px;">
+                    <h5>
+                        12. Inside <strong>utils</strong> folder you can find
+                        <strong>baseURL</strong> file.
+                    </h5>
+                    <br>
+                    <img src="../images/frontend/frontend-12.png" alt="" />
+                </div>
+                <div style="margin-top: 30px;">
+                    <h5>
+                        13. Open <strong>baseURL</strong> file and here you can change your baseURL.
+                    </h5>
+                    <br>
+                    <img src="../images/frontend/frontend-13.png" alt="" />
+
+                </div>
+                <div style="margin-top: 30px">
+                    <h5>14. Run the project:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            To start the project, type <code>"npm run dev"</code> command in
+                            the terminal (inside Visual Studio Code or Command Prompt).
+                        </li>
+                    </ul>
+
+                    <img src="../images/frontend/npmRunDev.png" alt="">
+                </div>
+                <div style="margin-top: 30px">
+                    <h5>15. Access the project in your browser:</h5>
+
+                    <ul>
+                        <li style="font-size: 20px">
+                            Open your web browser and navigate to
+                            <code>"http://localhost:3000/"</code> to see the project
+                            running.
+                        </li>
+                    </ul>
+
+                    <img src="../images/frontend/home.png" alt="">
+                </div>
+
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- setting -->
+            <div id="sitesetting">
+                <h3 style="color: #c09318;">Update your Site</h3><br>
+                <br>
+
+                <div style="margin-top: 30px">
+                    <h5>1. Click login icon for visit SignIn page</h5>
+                    <br>
+                    <img src="../images/frontend/login1.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>
+                        2. Click copy button to fill automatic phone number and password for
+                        login in admin account
+                    </h5>
+                    <img src="../images/frontend/login2.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>
+                        3. To visit <strong>Admin</strong> panel type <strong>"/admin"</strong> after your
+                        base URL. <br /> <br>
+                        Example: https://example.com/admin
+                    </h5>
+                    <img src="../images/frontend/login3.png" alt="" />
+                </div>
+
+                <div style="margin-top: 30px">
+                    <h5>4. Click Setting button to visit Site Setting page.</h5>
+                    <br>
+                    <img src="../images/frontend/login4.png" alt="" />
+                </div>
+
+                
+
+                <div style="margin-top: 30px">
+                    <h5>
+                        5. After change your necessary site information, click Save button.
+                    </h5> <br>
+                    <img src="../images/setting/sitesetting.png" alt="" />
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Site Policy-->
+            <div id="sitepolicy">
+                <h3 style="color: #c09318;">Update your Site Policy</h3><br>
+                <br>
+                <h5>
+                    In documentation, Site Setting page you can see how to login admin
+                    panel. After visit admin panel go to Setting page. In Site Setting page scroll down you can see all policy there.
+                </h5>
+                <div style="margin-top: 30px">
+                    <h6>
+                        After change your necessary site policy information, click Save button.
+                    </h6>
+                    <img src="../images/setting/terms.png" alt="" />
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--Payment GateWay Configuration-->
+            <div id="paymentGateway">
+                <h3 style="color: #c09318;">Update your Payment Gateway Configuration</h3>
+                <br>
+                <br>
+
+                <h5>
+                    In documentation, Site Setting page you can see how to login admin
+                    panel. After visit admin panel go to Setting page. In Setting page scroll down you can see all payment gateway there.
+                </h5>
+                <div style="margin-top: 30px">
+                    <h6>
+                        Tap Primary key and Secret key for change your Payment Gateway. Here you can
+                        active or inactive your payment gateway method by clicking toggle
+                        button.
+                    </h6>
+                    
+                    <h6>
+                        After finish your necessary change click Submit button for save
+                        payment configuration.
+                    </h6>
+                    <img src="../images/frontend/setting.png" alt="" />
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--  Currency Configuration-->
+            <div id="currency">
+                <h3 style="color: #c09318;"><strong>Update your Currency Configuration</strong></h3>
+
+                <br>
+                <br>
+                <h5>
+                    In documentation, Site Setting page you can see how to login admin
+                    panel. After visit admin panel go to Setting page. Bottom of the Setting page can see currency configuration there.
+                </h5>
+                <div style="margin-top: 30px">
+                    <h6>
+                        Click edit button for change your currency symbol and currency code.
+                        After change, click save button for save your currency
+                        configuration.
+                    </h6>
+                    <h6><strong>Example: </strong>I want to BDT currency, than <b>Currency Symbol</b> will be <b
+                            style="font-size: 20px;">৳</b> and Currency Code will be <strong>BDT</strong></b></h6>
+                    <img src="../images/frontend/setting.png" alt="" />
+                </div>
+
+               
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+         
+
+            <!-- videoOverview -->
+            <div id="videoOverview">
+                <h3 style="color: #c09318;">Video Overview</h3>
+                <br>
+   
+
+
+                <!-- <iframe src="../images/video_doc.pdf" style="width: 100%;" height="1000px" frameborder="0"></iframe> -->
+                 <h5 style="margin-bottom: 20px;">Project Installation:</h5>
+                 <iframe style="width: 100%;" height="600px" src="https://www.youtube.com/embed/Tl3INidhovQ?si=dUZnJ8CtQCcqSjR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 
+                 <br>
+                 <br>
+                 <h5 style="margin-bottom: 20px;">Project Overview:</h5>
+                 <iframe  style="width: 100%;" height="600px" src="https://www.youtube.com/embed/vHjoG4cf3-4?si=49RCOSvntil60-4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--Support-->
+            <div id="support">
+                <h2 style="color: #c09318;">Support</h2>
+
+                <p>
+                    If you encounter any issues or have questions, please reach out for
+                    support:
+                </p>
+
+                <ul>
+                    <li style="font-size: 20px"><strong>Email : </strong> nazmulbhuyian000@gmail.com</li>
+                    <li style="font-size: 20px"><strong>Phone : </strong> +880 1300048487</li>
+                </ul>
+
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            // Get all links in the sidebar
+            const links = document.querySelectorAll('.sidebar a');
+
+            // Add event listener to each link
+            links.forEach(link => {
+                link.addEventListener('click', function () {
+                    // Remove active class from all links
+                    links.forEach(l => l.parentNode.classList.remove('active'));
+                    // Add active class to the current link's parent (li)
+                    link.parentNode.classList.add('active');
+                });
+            });
+        </script>
+</body>
+
+</html>
